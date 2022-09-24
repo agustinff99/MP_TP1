@@ -4,21 +4,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Magenta Personalizados</title>
+  <link rel="stylesheet" href="/styles.css" >
+  <link rel="shortcut icon" href="/images/magenta_p_arriba.ico" type="image/x-icon">
 </head>
 <body>
-  Hola Mundo 1
-  Hola Mundo 2
-  hola mundo 3
-  hola mundo 2022
+  <header class="hero">
+    <nav class="nav container">
+      <div class="nav_logo">
+        <img src="/images/magenta_p.png" alt="Icono de Magenta Personalizados" class="nav_img">
+      </div>
+
+      <ul class="nav_link nav_link--menu">
+        <li class="nav_items">
+          <a href="#" class="nav_links">Productos</a>
+        </li>
+        <li class="nav_items">
+          <a href="#" class="nav_links">Ofertas</a>
+        </li>
+        <li class="nav_items">
+          <a href="#" class="nav_links">Sobre Nosotros</a>
+        </li>
+        <li class="nav_items">
+          <a href="#" class="nav_links">Contacto</a>
+        </li>
+      </ul>
+
+      <div class="nav_menu">
+        <img src="/images/menu.svg" class="nav_img">
+      </div>
+    </nav>
+
+    <section class="hero_container container">
+      <h1 class="hero_title">Un title</h1>
+      <p class="hero_paragraph">Un paragraph</p>
+      <a href="#" class="cta">Un boton</a>
+    </section>
+  </header>
+  <br><br><br><br><br>
+
+  <main>
+    <section class="container productos">
+      <div class="productos_container">
+        <img src="#" alt="Flecha para deslizar" class="productos_flecha" id="before">
+        <h2 class="productos_header">Nuestros Productos Mas vendidos</h2>
+        <section class="productos_body productos_body--show" data-id="1">
+          <div class="productos_data">
+            <h4 class="productos_info">hola</h4>
+            <figure class="productos_figure">
+              <img src="/images/magenta_p.png" alt="Foto de nuestros productos" class="productos_img">
+            </figure>
+          </div>
+        </section> 
+
+        <section class="productos_body productos_body--show" data-id="2">
+          <div class="productos_data">
+            <h4 class="productos_info">chau</h4>
+            <figure class="productos_figure">
+              <img src="/images/magenta_p.png" alt="Foto de nuestros productos" class="productos_img">
+            </figure>
+          </div>
+        </section> 
 
 
-  esta es otra modificacion qwerty
+        <img src="#" alt="Flecha para deslizar" class="productos_flecha" id="next"> 
+      </div>
+    </section>
+  </main>
 
-  pato
-  pata
-  la rama de agus
-  <h1>MAGENTA</h1>
-  <p><h1>26</h1></p>
+
+  <script src="/slider.js"></script>
 </body>
 </html>
