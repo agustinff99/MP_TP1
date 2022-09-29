@@ -13,7 +13,7 @@ body {
 .container {
   width: 90%;
   max-width: 1200;
-  margin: -8em auto;
+  margin: 0 auto;
   overflow: hidden;
   padding: 100px 0;
 }
@@ -125,35 +125,46 @@ nav_title {
 /* Productos*/
 
 .productos {
-  text-align: center;
+  background-color: #d697c3;
 }
 
 .productos_container {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
-  gap: 2em;
+  gap: 1em;
   align-items: center;
 }
 
 .productos_body {
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 50% 50%;
   justify-content: space-between;
   align-items: center;
-  gap: 5em;
+  gap: 0em;
   grid-column: 2/3;
-  grid-row: 1/3;
+  grid-row: 1/2;
   opacity: 0;
   pointer-events: none;
 }
 
-.productos_data {
-  max-width: 700px;
+.productos_body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+  align-items: center;
 }
 
-.productos_header {
-  align-content: auto;
-  color: #000;
+.productos_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.productos_texto {
+  max-width: 700px;
+  align-items: center;
 }
 
 .productos_flecha {
@@ -161,12 +172,3 @@ nav_title {
   cursor: pointer;
 }
 
-.productos_info {
-  text-align: center;
-}
-
-.productos_body--show{
-  pointer-events: unset;
-  opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-}

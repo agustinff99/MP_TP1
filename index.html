@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magenta Personalizados</title>
   <link rel="stylesheet" href="/styles.css" >
+  <link rel="stylesheet" href="/base.css" >
   <link rel="shortcut icon" href="/images/magenta_p_arriba.ico" type="image/x-icon">
 </head>
 <body>
@@ -44,32 +45,59 @@
   <br><br><br><br><br>
 
   <main>
-    <section class="container productos">
-      <div class="productos_container">
-        <img src="#" alt="Flecha para deslizar" class="productos_flecha" id="before">
-        <h2 class="productos_header">Nuestros Productos Mas vendidos</h2>
+    <section class="productos">
+      <div class="productos_container container">
+        <img src="/images/leftarrow.svg" alt="Flecha para deslizar izquierda" class="productos_flecha" id="before">
+        
         <section class="productos_body productos_body--show" data-id="1">
-          <div class="productos_data">
-            <h4 class="productos_info">hola</h4>
-            <figure class="productos_figure">
-              <img src="/images/magenta_p.png" alt="Foto de nuestros productos" class="productos_img">
-            </figure>
+          <div class="productos_texto">
+            <h3 class="productos_info">hola</h4>
+            <p class="productos_descripcion">este es el producto 1 lalalallalalalalalallalalalalalalalalalallalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala</p>
           </div>
+
+          <figure class="productos_foto">
+            <img src="/images/python.jpg" alt="Foto de nuestros productos" class="productos_img">
+          </figure>
         </section> 
 
         <section class="productos_body productos_body--show" data-id="2">
-          <div class="productos_data">
-            <h4 class="productos_info">chau</h4>
-            <figure class="productos_figure">
-              <img src="/images/magenta_p.png" alt="Foto de nuestros productos" class="productos_img">
-            </figure>
+          <div class="productos_texto">
+            <h3 class="productos_info">siga</h4>
+            <p class="productos_descripcion">este es el producto 2</p>
           </div>
+
+          <figure class="productos_foto">
+            <img src="/images/background-2.jpeg" alt="Foto de nuestros productos 2" class="productos_img">
+          </figure>
         </section> 
 
+        <section class="productos_body productos_body--show" data-id="3">
+          <div class="productos_texto">
+            <h3 class="productos_info">chau</h4>
+            <p class="productos_descripcion">este es el producto 3</p>
+          </div>
 
-        <img src="#" alt="Flecha para deslizar" class="productos_flecha" id="next"> 
+          <figure class="productos_foto">
+            <img src="/images/full-stack.jpg" alt="Foto de nuestros productos 3" class="productos_img">
+          </figure>
+        </section> 
+
+        <section class="productos_body productos_body--show" data-id="4">
+          <div class="productos_texto">
+            <h3 class="productos_info">chau chau</h4>
+            <p class="productos_descripcion">este es el producto 4</p>
+          </div>
+
+          <figure class="productos_foto">
+            <img src="/images/fondo1.jpg" alt="Foto de nuestros productos 4" class="productos_img">
+          </figure>
+        </section> 
+
+        <img src="/images/rightarrow.svg" alt="Flecha para deslizar derecha" class="productos_flecha" id="next">
       </div>
     </section>
+
+
   </main>
 
 
