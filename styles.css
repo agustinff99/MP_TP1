@@ -689,7 +689,26 @@ nav_title {
     margin-bottom: 10px;
   }
 
+  .nav_pie {
+    padding-bottom: 60px;
+  }
 
+  .nav_link_pie {
+    justify-content: space-between;
+  }
 
-  
+  .pie_entradas {
+    flex-wrap: wrap;
+  }
+
+  .pie_entrada {
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .pie_enviar {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
