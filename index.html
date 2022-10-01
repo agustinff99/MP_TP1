@@ -16,7 +16,7 @@
         <img src="/images/magenta_p.png" alt="Icono de Magenta Personalizados" class="nav_img">
       </div>
 
-      <ul class="nav_link nav_link--menu">
+      <ul class="nav_link nav_link_menu">
         <li class="nav_items">
           <a href="#" class="nav_links">Productos</a>
         </li>
@@ -29,6 +29,8 @@
         <li class="nav_items">
           <a href="#" class="nav_links">Contacto</a>
         </li>
+
+        <img src="/images/close.svg" alt="botón de cierre" class="nav_cierre">
       </ul>
 
       <div class="nav_menu">
@@ -46,7 +48,7 @@
   <main>
 
     <section>
-      <section class="ofertas container">
+      <section class="ofertas ofertas_container">
         <br><br><br><br>
         <h2 class="ofertas_subtitulo">Obten el plan perfecto para aprender</h2>
 
@@ -64,6 +66,7 @@
             <a href="#" class="ofertas_link">Empieza ahora</a>
           </div>
 
+          <br>
 
           <div class="ofertas_elemento ofertas_elemento_centro">
             <p class="ofertas_nombre_centro">Grid</p>
@@ -78,6 +81,7 @@
             <a href="#" class="ofertas_link_centro">Empieza ahora</a>
           </div>
 
+          <br>
 
           <div class="ofertas_elemento">
             <p class="ofertas_nombre">Animaciones</p>
@@ -236,7 +240,44 @@
 
   </main>
 
+  <footer class="pie">
+    <section class="pie_container container">
+      <nav class="nav nav_pie">
+
+        <ul class="nav_link nav_link_pie">
+          <li class="nav_items">
+            <a href="#" class="nav_links">Inicio</a>
+          </li>
+          <li class="nav_items">
+            <a href="#" class="nav_links">Productos</a>
+          </li>
+          <li class="nav_items">
+            <a href="#" class="nav_links">Ofertas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form action="https://formspree.io/f/mknkkrkj" class="pie_mail" method="post">
+        <h2 class="pie_ofertas">Recibí las mejores ofertas</h2>
+        <div class="pie_entradas">
+          <input type="email" placeholder="Email" class="pie_entrada" name="replyto">
+          <input type="submit" value="Registrate" class="pie_enviar">
+        </div>
+      </form>
+    </section>
+
+    <section class="pie_derechos container">
+      <div class="pie_redes">
+        <a href="#" class="pie_iconos"><img src="#" class="pie_img"></a>
+        <a href="#" class="pie_iconos"><img src="#" class="pie_img"></a>
+        <a href="#" class="pie_iconos"><img src="#" class="pie_img"></a>
+
+        <h3 class="pie_derechos_reservados">Todos los derechos propiedad Magenta S.A.</h3>
+      </div>
+    </section>
+  </footer>
 
   <script src="/slider.js"></script>
+  <script src="/menu.js"></script>
 </body>
 </html>

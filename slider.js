@@ -14,3 +14,7 @@ productosContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+
+

@@ -38,7 +38,7 @@ body {
   height: 100%;
   background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/images/fondo1.jpg');
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
   z-index: -1;
 }
 
@@ -87,8 +87,12 @@ nav_title {
   font-weight: 300;
 }
 
-.nav__items {
+.nav_items {
   list-style: none;
+}
+
+.nav_cierre {
+  display: var(--hamburguesa, none);
 }
 
 /* Hero Container */
@@ -143,6 +147,7 @@ nav_title {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  margin-bottom: 50px;
 }
 
 .productos_container::-webkit-scrollbar {
@@ -279,13 +284,23 @@ nav_title {
   background-color: #ffffff;
   background-image: linear-gradient(to right, rgba(248, 205, 237, 0.8) , rgba(248, 205, 237, 0.8) 7px, #ffffff 7px, #ffffff );
   background-size: 14px 100%;
-  clip-path: polygon(50% 19%, 100% 2%, 100% 100%, 0 100%, 0 2%);
+  clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0%);
+}
+
+.ofertas_container {
+  width: 100%;
+  max-width: 1200;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 0;
+  margin-top: -90px;
 }
 
 .ofertas_subtitulo {
   color: #001A49;
   font-size: 2rem;
   margin-bottom: 25px;
+  margin-top: 20px;
 }
 
 .ofertas_tabla {
@@ -367,3 +382,314 @@ nav_title {
   color: #1D293F;
 }
 
+/* Pie */
+
+.pie {
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+.pie_ofertas {
+  color: #fff;
+}
+
+.pie_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 60px;
+  margin-top: 50px;
+}
+
+.nav_pie {
+  padding-bottom: 20px;
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: row;
+  height: 100%;
+}
+
+.nav_link_pie {
+  display: flex;
+  margin: 0;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.pie_entradas {
+  margin-top: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.pie_entrada {
+  background-color: #fff;
+  height: 50px;
+  display: block;
+  padding-left: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin-right: 16px;
+}
+
+.pie_enviar {
+  margin-left: auto;
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px;
+  background-color: aqua;
+  border: none;
+  font-size: 1rem;
+  color: #001A49;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pie_derechos {
+  --padding-container: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.pie_derechos_reservados {
+  font-weight: 300;
+}
+
+.pie_iconos {
+  margin-bottom: 10px;
+}
+
+.pie_img {
+  width: 30px;
+}
+
+/* Media queries */
+
+@media (max-width:1233px) {
+  .nav_menu {
+    display: block;
+  }
+
+  .nav_img {
+    object-position: 50% 50%;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/images/fondo1.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+  }
+
+  .nav_link_menu {
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s opacity;
+  }
+
+  .nav_link--hamburguesa {
+    --hamburguesa: block;
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+
+  .nav_cierre {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .hero_title {
+    font-size: 2.5rem;
+  }
+  
+  .pie_container {
+    flex-wrap: wrap;
+  }
+
+  .nav_pie {
+    width: 100%;
+    justify-items: center;
+  }
+
+  .nav_link_pie {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .pie_mail {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .pie_entrada {
+    flex: 1;
+  }
+
+  .ofertas {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, rgba(248, 205, 237, 0.8) , rgba(248, 205, 237, 0.8) 7px, #ffffff 7px, #ffffff );
+    background-size: 14px 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .ofertas_elemento {
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 600px;
+    padding: 40px;
+  }
+
+  .ofertas_texto {
+    font-size: 200%;
+  }
+
+  .ofertas_elemento_centro {
+    background-color: #16a7e0;
+    text-align: center;
+    border-radius: 10px;
+    width: 600px;
+    padding: 40px;
+  }
+
+  .ofertas_nombre_centro {
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .ofertas_link {
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgba(235, 16, 162, 0.897);
+    font-weight: 600;
+    color: #001A49;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    font-size: 150%;
+  }
+
+  .ofertas_link_centro {
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgba(235, 16, 162, 0.897);
+    font-weight: 700;
+    color: #001A49;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    font-size: 200%;
+  }
+
+  .ofertas_tabla {
+    padding-top: 30px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:700px) {
+  .ofertas {
+    margin-top: 0px;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, rgba(248, 205, 237, 0.8) , rgba(248, 205, 237, 0.8) 7px, #ffffff 7px, #ffffff );
+    background-size: 14px 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .ofertas_elemento {
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 40px;
+    width: 280px;
+    padding: 20px;
+  }
+
+  .ofertas_texto {
+    font-size: 150%;
+  }
+
+  .ofertas_elemento_centro {
+    background-color: #ff0000;
+    text-align: center;
+    border-radius: 40px;
+    width: 280px;
+    padding: 20px;
+  }
+
+  .ofertas_nombre_centro {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+
+  .ofertas_link {
+    display: block;
+    padding: 20px 0;
+    border-radius: 40px;
+    text-decoration: none;
+    background-color: rgba(235, 16, 162, 0.897);
+    font-weight: 500;
+    color: #001A49;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    font-size: 150%;
+  }
+
+  .ofertas_link_centro {
+    display: block;
+    padding: 20px 0;
+    border-radius: 40px;
+    text-decoration: none;
+    background-color: rgb(115, 255, 0);
+    font-weight: 600;
+    color: #001A49;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    font-size: 150%;
+  }
+
+  .ofertas_tabla {
+    padding-top: 30px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+
+  
+}
