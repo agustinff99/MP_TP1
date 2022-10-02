@@ -102,13 +102,12 @@
 
     <section class="productos"> 
       <h2 class="productos_encabezado">best selling</h2>
-      <button class="pre-btn"><img src="images/rightarrow.svg" alt=""></button>
-      <button class="nxt-btn"><img src="images/rightarrow.svg" alt=""></button>
+      
       <div class="productos_container">
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="/images/background-2.jpeg" class="productos_cuerpo" alt="">
+            <img src="/images/background-2.jpeg" class="productos_cuerpo" onclick="currentSlide(1)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -121,7 +120,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(2)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -134,7 +133,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/full-stack.jpg" class="productos_cuerpo" alt="">
+            <img src="images/full-stack.jpg" class="productos_cuerpo" onclick="currentSlide(3)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -147,7 +146,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/magenta_p.png" class="productos_cuerpo" alt="">
+            <img src="images/magenta_p.png" class="productos_cuerpo" onclick="currentSlide(4)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -160,7 +159,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/python.jpg" class="productos_cuerpo" alt="">
+            <img src="images/python.jpg" class="productos_cuerpo" onclick="currentSlide(5)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -173,7 +172,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(6)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -186,7 +185,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(7)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -199,7 +198,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(8)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -212,7 +211,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(9)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -225,7 +224,7 @@
         <div class="productos_tarjeta">
           <div class="productos_imagen">
             <span class="descuento">50% off</span>
-            <img src="images/fondo1.jpg" class="productos_cuerpo" alt="">
+            <img src="images/fondo1.jpg" class="productos_cuerpo" onclick="currentSlide(10)>
             <button class="tarjeta_btn">add to wishlist</button>
           </div>
           <div class="productos_info">
@@ -235,6 +234,15 @@
           </div>
         </div>
 
+        <button class="pre-btn"><img src="images/rightarrow.svg" onclick="plusSlides(-1)" alt=""></button>
+        <button class="nxt-btn"><img src="images/rightarrow.svg" onclick="plusSlides(1)" alt=""></button>
+
+        <!--
+        <div>
+          <p class="caption"></p>
+        </div>
+      -->
+      
       </div>
     </section>
 
