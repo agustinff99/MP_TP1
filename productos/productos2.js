@@ -3,7 +3,7 @@ let span2 = document.getElementsByClassName('buttons2');
 	let product_page2 = Math.ceil(product2.length/4);
 	let l2 = 0;
 	let movePer2 = 25.34;
-	let maxMove2 = 203;
+	let maxMove2 = 25.34*6;
 	// mobile_view	
 	let mob_view2 = window.matchMedia("(max-width: 768px)");
 	if (mob_view2.matches)

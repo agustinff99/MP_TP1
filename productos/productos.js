@@ -3,13 +3,13 @@ let span = document.getElementsByClassName('buttons');
 	let product_page = Math.ceil(product.length/4);
 	let l = 0;
 	let movePer = 25.34;
-	let maxMove = 203;
+	let maxMove = 25.34*4;
 	// mobile_view	
 	let mob_view = window.matchMedia("(max-width: 768px)");
 	if (mob_view.matches)
 	 {
-	 	movePer = 50.36;
-	 	maxMove = 504;
+	 	movePer = 1;
+	 	maxMove = 8;
 	 }
 
 	let right_mover = ()=>{

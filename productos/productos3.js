@@ -3,12 +3,12 @@ let span3 = document.getElementsByClassName('buttons3');
 	let product_page3 = Math.ceil(product3.length/4);
 	let l3 = 0;
 	let movePer3 = 25.34;
-	let maxMove3 = 203;
+	let maxMove3 = 25.34*6;
 	// mobile_view	
 	let mob_view3 = window.matchMedia("(max-width: 768px)");
 	if (mob_view3.matches)
 	 {
-	 	movePer3 = 50.36;
+	 	movePer3 = 1;
 	 	maxMove3 = Infinity;
 	 }
 
